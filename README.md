@@ -1,17 +1,14 @@
 <div align="center">
 
-  <h1><code>wasm-pack-template</code></h1>
+  <h1><code>PseudoCode Interpreter Library</code></h1>
 
-  <strong>A template for kick starting a Rust and WebAssembly project using <a href="https://github.com/rustwasm/wasm-pack">wasm-pack</a>.</strong>
+  <strong>A Pseudocode interpreter library to be used in web apps. Written in Rust and exported to npm registry<a href="https://github.com/rustwasm/wasm-pack">wasm-pack</a>.</strong>
 
-  <p>
-    <a href="https://travis-ci.org/rustwasm/wasm-pack-template"><img src="https://img.shields.io/travis/rustwasm/wasm-pack-template.svg?style=flat-square" alt="Build Status" /></a>
-  </p>
-
+  <h3>Profile<h3>
   <h3>
-    <a href="https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/index.html">Tutorial</a>
+    <a href="https://github.com/Kratosgado">Github Profile</a>
     <span> | </span>
-    <a href="https://discordapp.com/channels/442252698964721669/443151097398296587">Chat</a>
+    <a href="https://Kratosgado.github.io">Portfolio site</a>
   </h3>
 
   <sub>Built with 🦀🕸 by <a href="https://rustwasm.github.io/">The Rust and WebAssembly Working Group</a></sub>
@@ -21,7 +18,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-A pseudocode interpreter written in rust.
+A pseudocode interpreter library written in rust and exported to npm registry.
 
 ## Installation
 
