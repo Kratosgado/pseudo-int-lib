@@ -20,11 +20,13 @@ impl EvalStatement for Evaluator {
             Statement::Print(expr) => {
                 let exprs: Vec<Expr> = destruct_multi(expr)?;
                 for expr in &exprs {
-                    print!("{}", self.evaluate_expr(&expr)?);
-                    
+                    // print!("{}", self.evaluate_expr(&expr)?);
+                    let res = self.evaluate_expr(expr)?;
+                    self.output.push_str(&format!("{}", res));
                 }
                 if exprs.len() == 1 {
-                    println!()
+                    // println!();
+                    self.output.push('\n')
                 }
             },
             Statement::Assignment(var, expr) => {
