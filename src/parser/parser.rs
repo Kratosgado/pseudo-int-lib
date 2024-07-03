@@ -1,9 +1,6 @@
-use wasm_bindgen::prelude::*;
-
 use crate::constants::error_handler::PseudoError;
 
 use super::{ParseToken, Statement, Token};
-#[wasm_bindgen]
 pub struct Parser {
     tokens: Vec<Token>,
     pub current_token: Option<Token>,
@@ -11,7 +8,6 @@ pub struct Parser {
     pub if_stack: Vec<Statement>,
 }
 
-#[wasm_bindgen]
 impl Parser {
     pub fn new(tokens: Vec<Token>) -> Self {
         let mut parser = Parser {

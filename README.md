@@ -17,47 +17,40 @@
   <sub>Built with 🦀🕸 by <a href="https://rustwasm.github.io/">The Rust and WebAssembly Working Group</a></sub>
 </div>
 
-## About
+# Pseudo Interpreter
 
-[**📚 Read this template tutorial! 📚**][template-docs]
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-This template is designed for compiling Rust libraries into WebAssembly and
-publishing the resulting package to NPM.
+A pseudocode interpreter written in rust.
 
-Be sure to check out [other `wasm-pack` tutorials online][tutorials] for other
-templates and usages of `wasm-pack`.
+## Installation
 
-[tutorials]: https://rustwasm.github.io/docs/wasm-pack/tutorials/index.html
-[template-docs]: https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/index.html
+- This application has been bundled up into vscode extension and can
+- be installed by searching pseudo runner in vscode extensions
 
-## 🚴 Usage
+## Implemented Features
 
-### 🐑 Use `cargo generate` to Clone this Template
+- print function
+- input function
+- variable assignment
+- expressions
+- if statements
+- multi conditional statements
+- arrays
+- for loops
+- while loops
+- functions
 
-[Learn more about `cargo generate` here.](https://github.com/ashleygwilliams/cargo-generate)
+## Usage
 
-```
-cargo generate --git https://github.com/rustwasm/wasm-pack-template.git --name my-project
-cd my-project
-```
+pseudo_interpreter [file path]
 
-### 🛠️ Build with `wasm-pack build`
+## Contact
 
-```
-wasm-pack build
-```
-
-### 🔬 Test in Headless Browsers with `wasm-pack test`
-
-```
-wasm-pack test --headless --firefox
-```
-
-### 🎁 Publish to NPM with `wasm-pack publish`
-
-```
-wasm-pack publish
-```
+- Email: [mbeahessilfieprince@gmail.com](mailto:mbeahessilfieprince@gmail.com)
+- GitHub: [Kratosgado](https://github.com/Kratosgado)
+- LinkedIn: [Prince Mbeah Essilfie](https://www.linkedin.com/in/prince-mbeah-essilfie-6bb0b5231)
+- Twitter: [MbeahEssilfie](https://twitter.com/MbeahEssilfie)
 
 ## 🔋 Batteries Included
 

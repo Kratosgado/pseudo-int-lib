@@ -2,7 +2,14 @@
 name = "pseudo-int-lib"
 version = "0.1.0"
 authors = ["Prince Mbeah Essilfie <mbeahessilfieprince@gmail.com>"]
-edition = "2018"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "A Pseudocode interpreter library to be used in web apps"
+readme = "README.md"
+homepage = "https://github.com/Kratosgado/pseudo-int-lib"
+repository = "https://github.com/Kratosgado/pseudi-int-lib"
+keywords = ["interpreter", "pseudocode"]
+categories = ["Development tools", "Programming language"]
 
 [lib]
 crate-type = ["cdylib", "rlib"]

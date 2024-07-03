@@ -21,6 +21,7 @@ impl EvalStatement for Evaluator {
                 let exprs: Vec<Expr> = destruct_multi(expr)?;
                 for expr in &exprs {
                     print!("{}", self.evaluate_expr(&expr)?);
+                    
                 }
                 if exprs.len() == 1 {
                     println!()

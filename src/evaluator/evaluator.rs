@@ -17,6 +17,7 @@ pub struct Evaluator {
     pub symbol_table: HashMap<String, EvalResult>,
     pub array_table: HashMap<String, Vec<EvalResult>>,
     pub function_args: HashMap<String, FuncArgs>,
+    pub output: &'static mut String,
 }
 
 impl Evaluator {
@@ -28,6 +29,7 @@ impl Evaluator {
             symbol_table: HashMap::new(),
             array_table: HashMap::new(),
             function_args: HashMap::new(),
+            output: &mut String::new(),
         };
         evaluator.next_statement();
         evaluator
@@ -42,10 +44,10 @@ impl Evaluator {
         }
     }
 
-    pub fn evaluate(&mut self) -> Result<(), PseudoError> {
+    pub fn evaluate(&mut self) -> Result<String, PseudoError> {
         while let Some(statement) = self.current_statement.take() {
             self.evaluate_statement(&statement, true)?;
         }
-        Ok(())
+        Ok(*self.output)
     }
 }
