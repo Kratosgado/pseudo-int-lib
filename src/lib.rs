@@ -31,6 +31,11 @@ impl Into<JsValue> for PseudoError {
     }
 }
 
+/// Executes pseudocode and returns print statements
+///
+/// # Errors
+/// Returns error of type PseudoError
+/// This function will return an error if .
 #[no_mangle]
 #[wasm_bindgen]
 pub fn interpret(inputs: &str) -> Result<JsValue, PseudoError> {
