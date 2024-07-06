@@ -1,6 +1,6 @@
 [package]
 name = "pseudo-int-lib"
-version = "0.2.2"
+version = "0.2.3"
 authors = ["Prince Mbeah Essilfie <mbeahessilfieprince@gmail.com>"]
 edition = "2021"
 license = "MIT OR Apache-2.0"
